@@ -61,10 +61,11 @@ function renderAvatar(user){
     }
     // 渲染文本头像
     else{
-        // 文本的第一个字符，转为大写
-        let first = username[0].toUpperCase()
-        $('.text-avatar').html(first).show()
-        $('.layui-nav-img').attr('src',user.user_pic).hide()
+        $('.layui-nav-img').hide()
+        var first = name[0].toUpperCase()
+        $('.text-avatar')
+          .html(first)
+          .show()
 
     }
 
